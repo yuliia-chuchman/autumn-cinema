@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f5efe5;
+    color: #3d3029;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 8%;
+    background-color: #3d3029;
+    color: #f5efe5;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d8a878;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e8d8c3;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.button {
+    display:inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #704b3a;
+    color: white;
+    border-radius: 5px;
+}
+
+main {
+    padding: 30px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.movie {
+    flex: 1 1 250px;
+    max-width: 350px;
+    padding: 22px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #dfd0bf;
+}
+
+.movie h3 {
+    font-size: 23px;
+}
+
+.year {
+    font-size: 13px;
+    font-weight: bold;
+    color: #806650;
+}
+
+.movie p{
+    line-height: 1.6;
+}
+
+.movie a{
+    display: inline-block;
+    margin-top: 10px;
+    color: #704b3a;
+    font-weight: bold;
+}
+
+.twilight {
+    background-color: #e0e5df;
+}
+
+.harry {
+    background-color: #e8dfc7;
+}
+
+.poets {
+    background-color: #e9d9c5;
+}
+
+.women {
+    background-color: #efd9cd;
+}
+
+.coraline {
+    background-color: #dce0ed;
+}
+
+.pride {
+    background-color: #e7e3d1;
+}
+
+.genres {
+    padding: 35px 8%;
+    text-align: center;
+    background-color: #e8d8c3;
+}
+
+.genres-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.genres-list span {
+    padding: 12px 20px;
+    background-color: #f5efe5;
+    border-radius: 20px;
+}
+
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #3d3029;
+    color: #f5efe5;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+    .hero h2 {
+        font-size: 26px;
+    }
+    .movie {
+        max-width: 100%;
+    }
+}
